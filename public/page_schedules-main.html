@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schedules</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+      .container {
+      position: relative;
+      height: 200px; /* Set the height of your container */
+      border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+    }
+
+    .bottom-content {
+      position: absolute;
+      bottom: 1em;
+    }
+    </style>
+    <!--  -->
+</head>
+<body>
+  <div class="h-screen w-full flex flex-col lg:flex-row">
+    <nav class="w-full lg:w-64 bg-gray-800 text-white p-5">
+        <a class="flex items-center gap-3 py-2" href="page_index.html">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="1.6799999999999997"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-6 h-6"
+            >
+                <path d="M5 12H19M5 12L11 6M5 12L11 18"></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+      <ul class="space-y-2">
+        <li>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex-1 p-5">
+      <h2 class="text-xl mb-5">School schedules</h2>
+      <p>Here is the overview this weeks schedule.
+      <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-1 my-5 text-sm">
+        <div class="p-5 border rounded-md">
+            <li>
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-6"> <!-- Column explanation -->
+                    <div class="col-span-2 border-2 flex items-center justify-center">
+                        <p class="font-semibold">Period</p>
+                    </div>
+                    <div class="col-span-2 border-y-2 flex items-center justify-center">
+                        <p class="font-semibold">Subject</p>
+                    </div>
+                    <div class="col-span-2 border-2 flex items-center justify-center">
+                        <p class="font-semibold">Classroom</p>
+                    </div>
+                </div>                
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 1st hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>1st</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 2nd hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>2nd</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 3rd hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>3rd</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 4th hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>4th</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 5st hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>5th</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 6st hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>6th</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 7st hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>7th</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 8st hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>8th</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 9st hour -->
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>9th</p>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                        <p>.</p>
+                    </div>
+                </div> 
+            </li>
+        </div>
+        <div class="p-5 border rounded-md">
+            <h3 class="text-lg mb-2">Field</h3>
+            <p>lorem ipsum</p>
+        </div>
+        <div class="p-5 border rounded-md">
+            <h3 class="text-lg mb-2">Field</h3>
+            <p>lorem ipsum</p>
+        </div>
+        <div class="p-5 border rounded-md">
+            <h3 class="text-lg mb-2">Field</h3>
+            <p>lorem ipsum</p>
+        </div>
+        <div class="p-5 border rounded-md">
+            <h3 class="text-lg mb-2">Field</h3>
+            <p>lorem ipsum</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
