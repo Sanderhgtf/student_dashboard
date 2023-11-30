@@ -3,185 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>schedules</title>
+    <title>Schedules</title>
     <!-- Include Tailwind CSS -->
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <style>
-      .container {
-      position: relative;
-      height: 200px; /* Set the height of your container */
-      border: 1px solid #ccc; /* Optional: Add a border for better visualization */
-    }
+        .container {
+            position: relative;
+            height: 200px; /* Set the height of your container */
+            border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+        }
 
-    .bottom-content {
-      position: absolute;
-      bottom: 1em;
-    }
+        .bottom-content {
+            position: absolute;
+            bottom: 1em;
+        }
     </style>
-    <!--  -->
 </head>
 <body>
-  <div class="h-screen w-full flex flex-col lg:flex-row">
-    <nav class="w-full lg:w-64 bg-gray-800 text-white p-5">
-        <a class="flex items-center gap-3 py-2" href="page_index.html">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="1.6799999999999997"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="w-6 h-6"
-            >
-                <path d="M5 12H19M5 12L11 6M5 12L11 18"></path>
-            </svg>
-            <span>Dashboard</span>
-          </a>
-      <ul class="space-y-2">
-        <li>
-        </li>
-      </ul>
-    </nav>
-    <main class="flex-1 p-5">
-      <h2 class="text-xl mb-5">School schedules</h2>
-      <p>Here is the overview this weeks schedule.
-      <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-1 my-5 text-sm">
-        <div class="p-5 border rounded-md">
-            <li>
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-6"> <!-- Column explanation -->
-                    <div class="col-span-2 border-2 flex items-center justify-center">
-                        <p class="font-semibold">Period</p>
-                    </div>
-                    <div class="col-span-2 border-y-2 flex items-center justify-center">
-                        <p class="font-semibold">Subject</p>
-                    </div>
-                    <div class="col-span-2 border-2 flex items-center justify-center">
-                        <p class="font-semibold">Classroom</p>
-                    </div>
-                </div>                
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 1st hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>1st</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 2nd hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>2nd</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 3rd hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>3rd</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 4th hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>4th</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 5st hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>5th</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 6st hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>6th</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 7st hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>7th</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 8st hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>8th</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2"> <!-- 9st hour -->
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>9th</p>
-                    </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                    <div class="col-span-1 border-x-2 flex items-center justify-center">
-                        <p>.</p>
-                    </div>
-                </div> 
-            </li>
-        </div>
-        <div class="p-5 border rounded-md">
-            <h3 class="text-lg mb-2">Field</h3>
-            <p>lorem ipsum</p>
-        </div>
-        <div class="p-5 border rounded-md">
-            <h3 class="text-lg mb-2">Field</h3>
-            <p>lorem ipsum</p>
-        </div>
-        <div class="p-5 border rounded-md">
-            <h3 class="text-lg mb-2">Field</h3>
-            <p>lorem ipsum</p>
-        </div>
-        <div class="p-5 border rounded-md">
-            <h3 class="text-lg mb-2">Field</h3>
-            <p>lorem ipsum</p>
-        </div>
-      </div>
-    </main>
-  </div>
+    <div class="h-screen w-full flex flex-col lg:flex-row bg-center bg-cover bg-no-repeat"style="background-image: url('img/library_blur.png');">
+        <nav class="w-full lg:w-64 bg-gray-800 text-white p-5">
+            <a class="hover:underline flex items-center gap-3 py-2" href="page_index.html">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="1.6799999999999997"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-6 h-6"
+                >
+                    <path d="M5 12H19M5 12L11 6M5 12L11 18"></path>
+                </svg>
+                <span>Dashboard</span>
+            </a>
+            <ul class="hover:ml-1 space-y-2">
+                <li class="mt-16">
+                    <a class="flex items-center gap-3 py-2" href="#">
+                        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7905 5.25H8.4594L7.7094 7.5H3V18H6.02658C6.20854 19.2721 7.30257 20.25 8.625 20.25C9.94743 20.25 11.0415 19.2721 11.2234 18H13.5266C13.7085 19.2721 14.8026 20.25 16.125 20.25C17.4474 20.25 18.5415 19.2721 18.7234 18H21V13.0986L18.5563 11.4695L16.1746 7.5H12.5405L11.7905 5.25ZM10.9594 7.5L10.7094 6.75H9.54053L9.29053 7.5H10.9594ZM18.4974 16.5H19.5V13.9014L17.7729 12.75H12V9H4.5V16.5H6.25261C6.67391 15.6131 7.57785 15 8.625 15C9.67215 15 10.5761 15.6131 10.9974 16.5H13.7526C14.1739 15.6131 15.0779 15 16.125 15C17.1721 15 18.0761 15.6131 18.4974 16.5ZM15.3254 9L16.6754 11.25H13.5V9H15.3254ZM9.75 17.625C9.75 18.2463 9.24632 18.75 8.625 18.75C8.00368 18.75 7.5 18.2463 7.5 17.625C7.5 17.0037 8.00368 16.5 8.625 16.5C9.24632 16.5 9.75 17.0037 9.75 17.625ZM17.25 17.625C17.25 18.2463 16.7463 18.75 16.125 18.75C15.5037 18.75 15 18.2463 15 17.625C15 17.0037 15.5037 16.5 16.125 16.5C16.7463 16.5 17.25 17.0037 17.25 17.625ZM7.5 9.75V11.25H6V12.75H7.5V14.25H9V12.75H10.5V11.25H9V9.75H7.5Z" fill="#ffffff"></path> </g></svg>
+                        <span>Notice of absence</span>
+                      </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="flex-1 p-5">
+            <h2 class="text-2xl mb-5 text-white font-bold">School schedules</h2>
+            <p class="text-lg text-white font-semibold">Here is the overview of your schedules for the week.</p>
+            
+            <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-1 my-5 text-sm">
+                <!-- Function to generate class schedule rows -->
+                <script>
+                    const daySchedules = {
+                        monday: [
+                            ["Math", 12],
+                            ["English", 25],
+                            ["Science", 7],
+                            ["History", 15],
+                            ["Computer Science", 5],
+                            ["Bioscience", 11],
+                            ["French", 23],
+                            ["German", 16],
+                            ["Geography", 21],
+                            ["Literature", 10],
+                            ["Debating", 19]
+                        ],
+                        tuesday: [
+                            ["Math", 12],
+                            ["English", 25],
+                            ["Science", 7],
+                            ["History", 15],
+                            ["Computer Science", 5],
+                            ["Bioscience", 11],
+                            ["French", 23],
+                            ["German", 16],
+                            ["Geography", 21],
+                            ["Literature", 10],
+                            ["Debating", 19]
+                        ],
+                        wednesday: [
+                            ["Math", 12],
+                            ["English", 25],
+                            ["Science", 7],
+                            ["History", 15],
+                            ["Computer Science", 5],
+                            ["Bioscience", 11],
+                            ["French", 23],
+                            ["German", 16],
+                            ["Geography", 21],
+                            ["Literature", 10],
+                            ["Debating", 19]
+                        ],
+                        thursday: [
+                            ["Math", 12],
+                            ["English", 25],
+                            ["Science", 7],
+                            ["History", 15],
+                            ["Computer Science", 5],
+                            ["Bioscience", 11],
+                            ["French", 23],
+                            ["German", 16],
+                            ["Geography", 21],
+                            ["Literature", 10],
+                            ["Debating", 19]
+                        ],
+                        friday: [
+                            ["Math", 12],
+                            ["English", 25],
+                            ["Science", 7],
+                            ["History", 15],
+                            ["Computer Science", 5],
+                            ["Bioscience", 11],
+                            ["French", 23],
+                            ["German", 16],
+                            ["Geography", 21],
+                            ["Literature", 10],
+                            ["Debating", 19]
+                        ],
+                    };
+
+                    function generateScheduleRow(day, period, subject, classroom) {
+                        return `
+                            <li>
+                                <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-5 border-b-2">
+                                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                                        <p class="font-semibold my-1">${period}</p>
+                                    </div>
+                                    <div class="col-span-3 flex">
+                                        <p class="my-1 ml-3">${subject}</p>
+                                    </div>
+                                    <div class="col-span-1 border-x-2 flex items-center justify-center">
+                                        <p class="my-1">${classroom}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        `;
+                    }
+
+                    // Generate schedule colomn for each day
+                    for (let day in daySchedules) {
+                        const daySchedule = daySchedules[day];
+
+                        document.write(`
+                            <div class="p-5 border rounded-md md:col-span-2 lg:col-span-3 xl:col-span-1 bg-white">
+                                <div class="text-center mb-2 font-semibold text-xl">${day.charAt(0).toUpperCase() + day.slice(1)}</div>
+                                <ul class="list-none">
+                                    <li>
+                                        <div class="flex w-full max-w-5xl mx-auto md:grid md:grid-cols-6">
+                                            <div class="col-span-2 border-2 flex items-center justify-center">
+                                                <p class="font-bold">Period</p>
+                                            </div>
+                                            <div class="col-span-2 border-y-2 flex items-center justify-center">
+                                                <p class="font-bold">Subject</p>
+                                            </div>
+                                            <div class="col-span-2 border-2 flex items-center justify-center">
+                                                <p class="font-bold">Classroom</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    ${daySchedule.map(([subject, classroom], index) => generateScheduleRow(day, `${index + 1}st`, subject, classroom)).join('')}
+                                </ul>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
